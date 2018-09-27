@@ -1,0 +1,28 @@
+{
+  "name": "react-uptown",
+  "version": "1.0.0",
+  "description": "High-Performance React state-management framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xhad/react-uptown.git"
+  },
+  "keywords": [
+    "React",
+    "State",
+    "Streaming",
+    "Events"
+  ],
+  "author": "Chad Lynch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xhad/react-uptown/issues"
+  },
+  "homepage": "https://github.com/xhad/react-uptown#readme",
+  "dependencies": {
+    "eventemitter3": "^3.1.0"
+  }
+}
