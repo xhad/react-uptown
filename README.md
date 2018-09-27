@@ -1,11 +1,11 @@
-##Uptown
+# Uptown Stream State
 
-**High-Performance React State Management
+**High-Performance React State Management**
 
 
-### Getting Stated
+## Getting Stated
 
-1. First, your react project, create an uptown folder:
+### 1. Create an uptown folder in your react project src:
 
 ```
 /src
@@ -18,13 +18,13 @@
     ...
 ```
 
-2. Install the uptown module:
+### 2. Install the uptown module:
 
 ```
 npm i -D react-uptown
 ```
 
-3. Create a base file to export Uptown.
+### 3. Create an index file to export Uptown and event functions.
 
 The base uptown index must always export the Uptown object as default. The uptown index will also contain event functions that can be imported anywhere in the application to update state.
 
@@ -39,7 +39,7 @@ export const changeMessage = (msg) =>
 
 ```
 
-4. Start by defining the strucutre of the uptown state file.
+### 4. Start by defining the strucutre of the uptown state file.
 
 Uptown should include the following:
 
@@ -78,7 +78,7 @@ Example.prototype.stats = function () {}
 
 That makes the basic structure of an Uptown state object. All Uptown state files should include these methods as matter of naming convention. Use prototyping instead es6 class strucuture for performance.
 
-5. We can know fill in the content of the uptown state file.
+### 5. We can know fill in the content of the uptown state file.
 
 **uptown/example.js**
 ```javascript
@@ -160,7 +160,7 @@ Example.prototype.stats = function () {
 }
 ```
 
-6. After we have the uptown state completed, implement the state into React.
+### 6. After we have the uptown state completed, implement the state into React.
 
 Start with App.js and add the following:
 
