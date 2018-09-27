@@ -93,7 +93,7 @@ export const ExampleState = {
 // constructor function
 export default function Example () {
     this.uptown = Uptown
-    this.state = Example
+    this.state = ExampleState
     this.start()
 }
 
