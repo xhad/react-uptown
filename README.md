@@ -79,9 +79,9 @@ Example.prototype.upstream = function () {}
 Example.prototype.stats = function () {}
 ```
 
-That makes the basic structure of an Uptown state object. All Uptown state files should include these methods as matter of naming convention. Use prototyping instead es6 class strucuture for performance.
+That is the basic structure of an Uptown state object. All Uptown state files should include these methods as a matter of naming convention. Use prototyping instead es6 class strucuture for performance.
 
-### 5. We can know fill in the content of the uptown state file.
+### 5. You can now fill in the content of the uptown state file.
 
 **uptown/example.js**
 ```javascript
@@ -110,7 +110,7 @@ Example.prototype.handle = function (payload) {
     //  The payload of the state events
     //  must always follow this structure:
     // { event: 'change-message', data: 'Eagle Pig' }
-    // These event function live in uptown/index.js.
+    // These event functions live in uptown/index.js.
     // The handle switches between the event types and 
     // parses and updates the state accordingly with
     // any logic that is required.
@@ -159,7 +159,7 @@ Example.prototype.stats = function () {
 }
 ```
 
-### 6. After we have the uptown state completed, implement the state into React.
+### 6. After you have the uptown state completed, implement the state into React.
 
 Start with App.js and add the following:
 
