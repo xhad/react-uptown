@@ -108,12 +108,8 @@ Example.prototype.handle = function (payload) {
     //  must always follow this structure:
     // { event: 'change-message', data: 'Eagle Pig' }
     // These event function live in uptown/index.js.
-    // Here is an example of an event emitter:
-    // const changeMessage = (msg) => 
-    //    Uptown.emit('example-event', { event: 'change-message', data: msg })
-    // The handle is a switch statement that
-    // switches between the event types and parses
-    // and updates the state accordingly with
+    // The handle switches between the event types and 
+    // parses and updates the state accordingly with
     // any logic that is required.
     const { event, data } = payload
     switch(event) {
@@ -169,7 +165,7 @@ Start with App.js and add the following:
 import React, { Component } from 'react'
 
 import Uptown, { changeMessage } from './uptown'
-import Example from './uptown/example'
+import Example, { ExampleState } from './uptown/example'
 
 class App extends Component {
 
