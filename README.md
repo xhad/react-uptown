@@ -2,6 +2,10 @@
 
 **High-Performance React State Management**
 
+Uptown Stream state uses event streaming across components, radically reducing the complexity of other react state management frameworks, such as Redux. By streaming evenings, complex nesting is no longer required, and
+any component may listner or emit state events.
+
+Uptown Stream state connects easily to a websocket remote state route for one to many, and many to many state management needs, making Uptown very useful for gaming and communication. 
 
 ## Getting Stated
 
