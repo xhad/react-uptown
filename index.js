@@ -1,4 +1,4 @@
-const Uptown = require('eventemitter3')
+const UptownStream = require('eventemitter3')
 
 
-module.exports = Uptown
+module.exports = { UptownStream }
