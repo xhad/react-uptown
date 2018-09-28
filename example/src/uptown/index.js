@@ -1,14 +1,13 @@
-import Uptown from 'react-uptown'
+import { UptownStream } from 'react-uptown'
 
+const Uptown = new UptownStream()
 
-export default new Uptown()
+export default Uptown
 
-
-uptown.on('test', console.log)
-uptown.emit('test', 'test')
 // Example Events
-export const changeMessage = (msg) => 
-    uptown.emit('example-event', { event: 'change-message', data: msg })
+export const changeMessage = (msg) => {
+    Uptown.emit('example-event', { event: 'change-message', data: msg })
+}
 
 
 // Auth Events

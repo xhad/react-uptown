@@ -1,6 +1,6 @@
 {
   "name": "react-uptown",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "High-Performance React state management",
   "main": "index.js",
   "scripts": {

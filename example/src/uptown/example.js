@@ -10,17 +10,15 @@ export default function Example (uptown) {
 }
 
 Example.prototype.start = function () {
-    console.log('ok')
-    this.uptown.on('game-event', this.handle, this)
+    this.uptown.on('example-event', this.handle, this)
 }
 
 Example.prototype.handle = function (payload) {
-    console.log('ok')
 
     const { event, data } = payload
     switch(event) {
         case 'change-message': {
-            this.state.message = Object.assign(this.state.message, data)
+            this.state = Object.assign(this.state, {message: data})
             return this.update()
         }
 
@@ -37,12 +35,18 @@ Example.prototype.update = function () {
 
 Example.prototype.stats = function () {
     console.log(
-        'Example State\n',
-        'state:\n',
+        'Example State',
+        '\n',
+        'state:',
+        '\n',
         this.state,
-        'example-event\n',
+        '\n',
+        'example-event',
+        '\n',
         this.uptown.listeners('example-event'),
-        'example-state\n',
+        '\n',
+        'example-state',
+        '\n',
         this.uptown.listeners('example-state')
 
     )
