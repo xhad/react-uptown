@@ -35,10 +35,12 @@ The base uptown index must always export the Uptown object as default. The uptow
 ```javascript
 import Uptown from 'react-uptown'
 
-export default Uptown
+const uptown = new Uptown()
+
+export default uptown
 
 export const changeMessage = (msg) =>
-    Uptown.emit('example-event', { event: 'change-message', data: msg })
+    uptown.emit('example-event', { event: 'change-message', data: msg })
 
 ```
 
