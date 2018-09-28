@@ -2,7 +2,7 @@
 
 **High-Performance React State Management**
 
-Uptown Stream state uses event streaming across components, radically reducing the complexity of other react state management frameworks, such as Redux. By streaming events, complex and annoying consumer/producer nesting is no longer required, and any component is liberted to emit or listen to state events.
+Uptown Stream state uses event streaming across components, radically reducing the complexity of other react state management frameworks, such as Redux. By streaming events, complex and annoying consumer/producer nesting is no longer required, and any component is liberated to emit or listen to state events.
 
 Uptown Stream state connects easily to a websocket remote state router such as Crossbar.io for one to many, and many to many state management needs, making Uptown very useful for gaming and currency exchange functionality. 
 
@@ -81,7 +81,7 @@ Example.prototype.upstream = function () {}
 Example.prototype.stats = function () {}
 ```
 
-That is the basic structure of an Uptown state object. All Uptown state files should include these methods as a matter of naming convention. Use prototyping instead es6 class strucuture for performance.
+That is the basic structure of an Uptown state object. All Uptown state files should include these methods as a matter of naming convention. Use prototyping instead of es6 class strucuture for performance.
 
 ### 5. You can now fill in the content of the uptown state file.
 
