@@ -2,9 +2,9 @@
 
 **High-Performance React State Management**
 
-Uptown Stream state uses event streaming across components, radically reducing the complexity of other react state management frameworks, such as Redux. By streaming events, complex and annoying consumer/producer nesting is no longer required, and any component is liberated to emit or listen to state events.
+Uptown Stream state uses event streaming across components, radically reducing the complexity compared to other React state management frameworks, such as Redux. By streaming events, complex and annoying consumer/producer nesting is no longer required, and any component is liberated to emit or listen to state events.
 
-Uptown Stream state connects easily to a websocket remote state router such as Crossbar.io for one to many, and many to many state management needs, making Uptown very useful for gaming and currency exchange functionality. 
+Uptown Stream state connects easily to a remote websocket router such as Crossbar.io for one to many, and many to many state management needs, making Uptown very useful for gaming and currency exchange functionality. 
 
 ## Getting Started
 
@@ -121,7 +121,7 @@ Example.prototype.handle = function (payload) {
         case 'change-message': {
             // add middleware here to parse or transform
             // the data, or emit other events as needed.
-            this.state.message = Object.assign(this.state.message, data)
+            this.state.message = Object.assign(data)
             // Always return this.update() from switch cases.
             return this.update()
         }
@@ -201,7 +201,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <p>Messge: {this.state.ExampleState.message}</p>
+                <p>{this.state.ExampleState.message}</p>
 
                 <button onClick={() => changeMessage('EaglePig Soars!!!')}>
                   Eagle Pig
