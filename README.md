@@ -201,7 +201,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <p>Messge: {this.state.message}</p>
+                <p>Messge: {this.state.ExampleState.message}</p>
 
                 <button onClick={() => changeMessage('EaglePig Soars!!!')}>
                   Eagle Pig
