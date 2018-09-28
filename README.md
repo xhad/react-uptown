@@ -6,7 +6,7 @@ Uptown Stream state uses event streaming across components, radically reducing t
 
 Uptown Stream state connects easily to a websocket remote state router such as Crossbar.io for one to many, and many to many state management needs, making Uptown very useful for gaming and currency exchange functionality. 
 
-## Getting Stated
+## Getting Started
 
 ### 1. Create an uptown folder in your react project src:
 
@@ -102,7 +102,7 @@ Example.prototype.start = function () {
     // stick to this naming convention for
     // the main event for the state file
     // '{name of state object}-event'
-    this.on('example-event', this.handle, this)
+    this.uptown.on('example-event', this.handle, this)
 }
 
 // Handle is a switch statement to handle events 
